@@ -21,13 +21,14 @@ public class ObjectRandomiser : EditorWindow
     {
         GUILayout.Label("Randomise Selected Objects", EditorStyles.boldLabel);
 
-        GUILayout.Label("Rotations");
+        GUILayout.Label("Rotations", EditorStyles.boldLabel);
         _randomX = EditorGUILayout.Toggle("Randomise X", _randomX);
         _randomY = EditorGUILayout.Toggle("Randomise Y", _randomY);
         _randomZ = EditorGUILayout.Toggle("Randomise Z", _randomZ);
 
+        EditorGUILayout.Space();
 
-        GUILayout.Label("Scaling");
+        GUILayout.Label("Scaling", EditorStyles.boldLabel);
         _randomScale = EditorGUILayout.Toggle("Randomise Scale", _randomScale);
         _minScale = EditorGUILayout.FloatField("Min Scale", _minScale);
         _maxScale = EditorGUILayout.FloatField("Max Scale", _maxScale);
